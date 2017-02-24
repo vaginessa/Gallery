@@ -22,6 +22,14 @@
 					a
 						margin 0
 						
+	// Contacts
+	.form__descr
+		left -40%
+	.sect__contacts
+		.sect__title
+			&:before
+				left 20px
+						
 +max-screen(1000px)
 	body
 		font-size 14px
@@ -32,6 +40,12 @@
 			text-align center 
 		.btn__wrapper
 			text-align center
+			
+	// Contacts
+	.form__descr
+		left -47%
+	.form__wrapper
+		background none
 		
 +max-screen(770px)
 	.box
@@ -105,7 +119,58 @@
 	
 	.social__list
 		text-align center
-						
+		
+	#slider
+		.owl-nav
+			.owl-next
+				right 0
+			.owl-prev
+				left 0
+		
+	//Contacts
+	.form__descr
+		position relative
+		left 0
+		transform none
+		margin-bottom 25px
+	.sect__contacts
+		.sect__title
+			padding-top 0
+			margin-bottom 30px
+			&:before
+				display none
+				
++max-screen(620px)
+	// Contacts
+	.input__row
+		.form__input
+			dispalay block
+			max-width 100%
+	.captcha__row
+		display block
+		text-align center
+		.captcha
+			margin-bottom 30px
+		.btn
+			margin-left 0
+	
+	.form
+		option, 
+		select
+			font-size 18px
+			
+	input.form__input::-webkit-input-placeholder
+		font-size 18px
+		
+	input.form__input::-moz-placeholder
+		font-size 18px
+		color $text-color
+	input.form__input:-moz-placeholder
+		font-size 18px
+		color $text-color
+	input.form__input:-ms-input-placeholder
+		font-size 18px
+		
 
 +max-screen(425px)
 	body
@@ -126,6 +191,18 @@
 			max-width 160px
 	.sect__author
 		background-size 50% 100%
+	
+	.slider__wrapper
+		background none
+	#slider
+		.owl-nav
+			.owl-next,
+			.owl-prev
+				margin-top -25px
+		.btn
+			left 50%
+			transform translateX(-50%)
+			max-width 135px
 			
 +max-screen(325px)
 	// Header

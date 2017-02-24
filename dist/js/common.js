@@ -1,5 +1,7 @@
 var ProjectApp = function (){
-	// My app scripts
+	var year = new Date(),
+		now = year.getFullYear();
+	document.getElementById('year').innerHTML = now;
 };
 
 window.addEventListener('DOMContentLoaded', function() {
