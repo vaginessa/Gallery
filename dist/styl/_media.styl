@@ -8,4 +8,131 @@
 +max-screen-height(maxHeight)
 +min-screen-height(minHeight)
 */
++max-screen(1400px)
+	// Author
+	.sect__author
+		background-size 30% 100%
++max-screen(1200px)
+	// Header
+	.header
+		&__item
+			&.rotate
+				.header__item--title
+					left -120%
+					a
+						margin 0
+						
++max-screen(1000px)
+	body
+		font-size 14px
+		
+	// Footer
+	.footer
+		.author__info
+			text-align center 
+		.btn__wrapper
+			text-align center
+		
++max-screen(770px)
+	.box
+		padding 30px 0
+	// Header
+	.header
+		padding 25px 0
+		background none
+		&:before
+			display none
+		&:after
+			display none
+	
+		.logo__wrapper
+			margin-bottom 40px
+			text-align center
+		
+		.nav__list
+			text-align center
+			&--item
+				margin-right 30px
+				margin-bottom 20px
+				&:nth-child(2),
+				&:last-child
+					margin-right 0
+		&__item
+			text-align center
+			&.rotate
+				.header__item--title
+					transform none
+					position relative 
+					left 0
+			&--title
+				margin-bottom 10px
+				
+	// Author
+	.sect__author
+		.author__info
+			padding-left 0
+		.author__img
+			margin-bottom 25px
+	
+	.author__info--title
+		text-align center
+	.author__info--blockquote
+		padding-left 0
+		text-align center
+	
+	// Articles
+	.sect__articles 
+		.article
+			padding-bottom 25px
+			margin-bottom 25px
+			border-bottom 1px solid $dark-bg
+			text-align center
+			&__thumb
+				margin-bottom 20px
+				
+	// Footer
+	.footer__title
+		margin-bottom 25px
+	
+	.author__block
+		padding-bottom 25px
+		margin-bottom 25px
+		border-bottom 1px solid $light-color
+	
+	.social__block
+		padding-bottom 40px
+		background-size contain
+	
+	.social__list
+		text-align center
+						
 
++max-screen(425px)
+	body
+		font-size 12px
+	
+	// Header
+	.header
+		&:after
+			display block
+			top 24%
+			left 10%
+		.logo__wrapper
+			margin-bottom 25px
+			
+	// Author
+	.author__img 
+		img
+			max-width 160px
+	.sect__author
+		background-size 50% 100%
+			
++max-screen(325px)
+	// Header
+	.header
+		&:after
+			display block
+			top 27%
+			left 10%
+		.logo__wrapper
+			margin-bottom 25px

@@ -7,6 +7,20 @@ window.addEventListener('DOMContentLoaded', function() {
 }) 
 
 $(document).ready(function() {
+	var html = $('body').width();
+
+
+	if(html < 770) {
+		// Column equal height
+		var maxheight = 0;
+		$(".header__item--title").each(function() {
+		  if($(this).height() > maxheight) { maxheight = $(this).height(); }
+		});
+
+		$(".header__item--title").height(maxheight);
+
+	}
+	
 
 	// Slider
 	$('#slider').owlCarousel({
