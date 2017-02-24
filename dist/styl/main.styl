@@ -1,0 +1,122 @@
+//Reset css
+@import '_reset.styl'
+// File with all variables styles
+@import '_vars.styl'
+// Grid
+@import '_grid.styl'
+// File with fonts
+@import '_fonts.styl'
+// File with basic style (body styles, etc)
+@import '_basic.styl'
+// File with header styles
+@import '_header.styl'
+// icons
+@import '_icons.styl'
+//interface styles (buttons, links, etc)
+@import '_interface.styl'
+// Forms style
+@import '_form.styl'
+
+
+// Section author======================================
+.sect__author
+	position relative
+	background $light-bg url('../img/about-bg.png') left no-repeat
+	background-size 35% 100%
+.author__img
+	text-align center
+	a
+		display block
+	img
+		max-width 225px
+		opacity .75
+	.author__info
+		padding-left 40px
+			
+.author__info
+	&--title
+		font-size 2.067em
+	&--blockquote
+		font-size 1em
+		padding-left 90px
+	
+	header
+		margin-bottom 25px
+	p
+		font-size 1.600em
+// ====================================================
+
+// Slider=============================================
+
+	
+.slider
+	&__wrapper
+		background url('../img/slider-lines.png') bottom right no-repeat
+	&__item
+		position relative
+		.btn
+			position absolute
+			right 20px
+			bottom 10px
+#slider
+	.owl-dots
+		.owl-dot
+			span
+				width 13px
+				height 13px
+				background #dedede
+				transition all .23s ease-in-out
+				&:hover
+					background #cccccc		
+			&.active
+				span
+					background #cccccc
+	
+	.owl-nav
+		.owl-next,
+		.owl-prev
+			position absolute
+			top 50%
+			transform translateY(-50%)
+			background url('../img/arrows-ic.png') no-repeat
+			width 50px
+			height 50px
+			display inline-block
+			transition all .23s ease-in-out
+			&:hover
+				opacity .7
+		.owl-prev
+			left -80px
+			background-position 0 0
+		.owl-next
+			right -80px
+			background-position -55px 0			
+			
+// ====================================================
+
+
+// Section articles====================================================
+.sect__articles
+	.article
+		margin-bottom 45px
+		&__thumb
+			a
+				display block
+				&:hover
+					opacity .7
+			img
+				max-width 174px
+				box-shadow 0px 0px 5px 0px rgba(0, 0, 0, 0.31)
+		&__title
+			padding-left 15px
+			margin-bottom 15px
+			a
+				font-size 2.000em
+				&:hover
+					color $dark-bg
+			
+// ====================================================	
+
+@import '_footer.styl'
+// File with media quaeries styles
+@import '_media.styl'

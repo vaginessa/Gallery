@@ -1,0 +1,85 @@
+@import '_vars.styl'
+
+
+.header
+	position relative
+	background url('../img/lines-img.png') no-repeat
+	background-position 55% 20%
+	padding-bottom 100px
+	&__item
+		position relative
+		&--title
+			font-size 1.53em
+			margin-bottom 15px
+			a
+				&:hover
+					color $dark-bg
+			
+				
+		&--img
+			display block
+			img
+				opacity .75
+				transition all .23s ease-in-out
+				box-shadow 0px 0px 5px 0px rgba(0, 0, 0, 0.45)
+			&:hover
+				img
+					opacity 1
+		&.rotate
+			.header__item--title
+				transform rotate(-90deg)
+				position absolute
+				display inline-block			
+				left -100%
+				bottom 0				
+				a
+					display block
+					margin-bottom -15px
+	&:before
+		display block
+		width 215px
+		height 114px
+		background url('../img/header-lines-img.png') no-repeat 
+		background-position center
+		content ''
+		position absolute
+		bottom 0
+		left 25%
+	
+	&:after
+		display block
+		height 28px
+		width 100%
+		position absolute
+		left 60%
+		bottom 32%
+		content ''
+		background url('../img/menu-lines-img.png') left no-repeat
+		background-size contain
+	
+	.logo__wrapper
+		margin-bottom 220px
+
+.logo
+	font-size 2.6em
+	line-height 18px
+	display inline-block
+	span
+		font-size 23px
+	&:hover
+		color $dark-bg
+		
+.nav__list
+	text-align right
+	&--item
+		display inline-block
+		margin-right 65px
+		margin-bottom 45px
+		&:nth-child(2),
+		&:last-child
+			margin-right 0
+	&--link
+		font-size 1.467em
+		text-transform uppercase
+		&:hover
+			color $dark-bg
