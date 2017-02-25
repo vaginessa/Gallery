@@ -1,6 +1,32 @@
 @import '_vars.styl'
 
 
+.header__gallery
+	&:before
+		display none
+.sect__slider--gallery
+	padding 25px 0
+	position relative
+	&:after
+		display block
+		position absolute
+		content ''
+		top -35px
+		right 25%
+		background url('../img/lines-img.png') center no-repeat
+		width 12px
+		height 199px
+	&:before
+		display block
+		position absolute
+		content ''
+		bottom 0
+		left 20%
+		background url('../img/gallery-bg.png') center no-repeat
+		width 28px
+		height 115px
+	.slider__wrapper
+		background none
 .gallery__wrapper
 	width 100%
 	min-height 700px
@@ -52,6 +78,8 @@
 	&.second
 		max-width 60%
 		min-height 200px
+		// img
+		// 	min-height 201px
 		.gallery__item--descr
 			p
 				position absolute

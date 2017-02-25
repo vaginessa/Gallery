@@ -12,6 +12,12 @@
 	// Author
 	.sect__author
 		background-size 30% 100%
+		
+	.sect__slider--gallery
+		&:after
+			right 10%
+		&:before
+			left 10%
 +max-screen(1200px)
 	// Header
 	.header
@@ -29,6 +35,23 @@
 		.sect__title
 			&:before
 				left 20px
+				
+	// Gallery
+	.gallery__wrapper
+		min-height 575px
+	.gallery__item
+		&.first
+			min-height 368px
+		&.second
+			min-height 156px
+		&.third
+			min-height 206px
+		&.fourth
+			min-height 205px
+		&.five
+			min-height 417px
+			img
+				min-height 418px
 						
 +max-screen(1000px)
 	body
@@ -50,6 +73,66 @@
 	.form__input
 		&.addr
 			margin-right 15px
+			
+
+	.sect__slider--gallery
+		&:after,
+		&:before
+			display none
+			
+	// Gallery
+	.gallery__wrapper
+		min-height 437px
+	.gallery__item
+		&--descr
+			padding 15px
+			p
+				position relative
+				padding 0
+				font-size 12px
+		&.first
+			min-height 282px
+			.gallery__item--title
+				font-size 18px
+			.gallery__item--descr
+				p
+					left auto
+		&.second
+			min-height 120px
+			.gallery__item--title
+				font-size 18px
+			.gallery__item--descr
+				p
+					left auto
+				&:hover
+					p
+						top 10px
+					
+		&.third
+			min-height 157px
+			.gallery__item--title
+				font-size 18px
+				bottom 10px
+			.gallery__item--descr
+				p
+					left auto
+				&:hover
+					p
+						top 10px
+		&.fourth
+			min-height 157px
+			.gallery__item--title
+				font-size 18px
+		&.five
+			min-height 318px
+			.gallery__item--title
+				font-size 18px
+			img
+				min-height 319px
+			&:hover
+				.gallery__item--title
+					top 15px
+
 +max-screen(770px)
 	.box
 		padding 30px 0
@@ -190,6 +273,35 @@
 		color $text-color
 	input.form__input:-ms-input-placeholder
 		font-size 18px
+		
+	.gallery__item
+		&.first,
+		&.second,
+		&.third,
+		&.fourth,
+		&.five
+			max-width 100% !important
+			min-height auto
+			height 200px
+			float none !important
+			.gallery__item--title
+				margin-bottom 20px
+				position relative
+				transform none
+				left auto
+				bottom auto
+				top auto
+			.gallery__item--descr
+				p
+					top auto
+					left auto
+					bottom auto
+					font-size 14px
+					position relative
+	
+		
+					
+
 		
 
 +max-screen(425px)
