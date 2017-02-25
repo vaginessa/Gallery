@@ -47,6 +47,9 @@
 	.form__wrapper
 		background none
 		
+	.form__input
+		&.addr
+			margin-right 15px
 +max-screen(770px)
 	.box
 		padding 30px 0
@@ -161,6 +164,8 @@
 		.form__input
 			dispalay block
 			max-width 100%
+			&.addr
+				margin-right 0
 	.captcha__row
 		display block
 		text-align center
@@ -218,6 +223,19 @@
 			left 50%
 			transform translateX(-50%)
 			max-width 135px
+			
+	.events__item
+		display block
+		padding-bottom 25px
+		border-bottom 1px solid $dark-bg
+		&--count
+			margin-bottom 20px
+			width 45px
+			height 45px
+			line-height 45px
+			font-size 22px
+		&--descr
+			margin-bottom 20px
 			
 +max-screen(325px)
 	// Header

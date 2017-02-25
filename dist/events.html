@@ -24,7 +24,9 @@
 	
 	<!-- CONTENT WRAPPER -->
 	<div class="content_wrapper">
-		<!-- Content start here! -->
+		<!-- Overlay -->
+		<div class="overlay" data-id="close"></div>
+		<!-- //Overlay -->
 		
 		<!-- Header -->
 		<header class="header box">
@@ -77,28 +79,36 @@
 			<div class="container">
 				<div class="row">
 					<!-- Events item -->
-<!-- 					<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-8 col-md-offset-2">
 						<div class="events__item">
-							<span class="events__item--count">1</span>
+							<div class="text-center">
+								<span class="events__item--count">1</span>
+							</div>
 							<div class="events__item--descr">
 								<h5 class="events__item--title">Сходка в Красноясрке (20 января)</h5>
 								<p>В свои мандалы я вкладываю свою любовь — к людям, к Солнцу,ко всему живому и прекрасному на Земле!</p>
 							</div>
-							<button class="btn__info" type="button">?</button>
+							<div class="text-center">
+								<button class="btn__info" type="button">?</button>
+							</div>
 						</div>
-					</div> -->
+					</div>
 					<!-- //Events item -->
 					<!-- Events item -->
-					<!-- <div class="col-md-8 col-md-offset-2">
+					<div class="col-md-8 col-md-offset-2">
 						<div class="events__item">
-							<span class="events__item--count">2</span>
+							<div class="text-center">
+								<span class="events__item--count">2</span>
+							</div>
 							<div class="events__item--descr">
 								<h5 class="events__item--title">Вебинар на тему “Картины” (28 февраля)</h5>
 								<p>Картина работает сама, и, в отличие от множества методик и техник, она не требует от вас похода к психотерапевту </p>
 							</div>
-							<button class="btn__info" type="button">?</button>
+							<div class="text-center">
+								<button class="btn__info" type="button">?</button>
+							</div>
 						</div>
-					</div> -->
+					</div>
 					<!-- //Events item -->
 				</div>
 				<!-- //row -->
@@ -127,7 +137,8 @@
 									</div>
 									<div class="col-md-3 col-sm-6 col-xs-12">
 										<div class="btn__wrapp">
-											<a href="#" class="btn btn__grey">запись</a>
+											<!-- <a href="#" class="btn btn__grey">запись</a> -->
+											<button type="button" data-id="show" class="btn btn__grey btn__popup">запись</button>
 										</div>
 									</div>
 								</div>
@@ -139,7 +150,32 @@
 								
 							</div>
 						</article>
+
 					</div>
+
+					<!-- Popup form -->
+					<div class="popup">
+						<button type="button" class="btn__close" data-id="close">X</button>
+						<h3 class="popup__title text-center">Записаться на <span>сходку в красноярске</span></h3>
+						<form class="form contact__form form__popup">
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="Заявка с сайта Анастасии Водясовой">
+							<input type="hidden" name="admin_email" value="email@email">
+							<input type="hidden" name="form_subject" value="Запись на семинар">
+							<!-- //Hidden inputs -->
+							<input type="text" class="form__input" name="ФИО" placeholder="Фамилия, Имя, Отчество">
+							<input type="text" class="form__input" name="E-mail" placeholder="E-mail">
+							<input type="tel" class="form__input" name="Телефон" placeholder="Телефон" required>
+							<div class="input__row">
+								<input type="text" class="form__input addr" name="Адрес" placeholder="Адрес">
+								<input type="text" class="form__input index" name="Индекс" placeholder="Индекс">
+							</div>
+							<div class="captcha__row">
+								<button type="submit" class="btn btn__grey btn__submit">записаться</button>
+							</div>
+						</form>
+					</div>
+					<!-- //Popup form -->
 				</div>
 				<!-- //Article row -->
 
@@ -159,7 +195,8 @@
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-12 ">
 										<div class="btn__wrapp">
-											<a href="#" class="btn btn__grey">запись</a>
+											<!-- <a href="#" class="btn btn__grey">запись</a> -->
+											<button type="button" data-id="show" class="btn btn__grey btn__popup">запись</button>
 										</div>
 										
 									</div>
@@ -172,7 +209,31 @@
 								
 							</div>
 						</article>
+
 					</div>
+					<!-- Popup form -->
+					<div class="popup">
+						<button type="button" class="btn__close" data-id="close">X</button>
+						<h3 class="popup__title text-center">Записаться на <span>вебинар "Картины"</span></h3>
+						<form class="form contact__form form__popup">
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="Заявка с сайта Анастасии Водясовой">
+							<input type="hidden" name="admin_email" value="email@email">
+							<input type="hidden" name="form_subject" value="Запись на семинар">
+							<!-- //Hidden inputs -->
+							<input type="text" class="form__input" name="ФИО" placeholder="Фамилия, Имя, Отчество">
+							<input type="text" class="form__input" name="E-mail" placeholder="E-mail">
+							<input type="tel" class="form__input" name="Телефон" placeholder="Телефон" required>
+							<div class="input__row">
+								<input type="text" class="form__input addr" name="Адрес" placeholder="Адрес">
+								<input type="text" class="form__input index" name="Индекс" placeholder="Индекс">
+							</div>
+							<div class="captcha__row">
+								<button type="submit" class="btn btn__grey btn__submit">записаться</button>
+							</div>
+						</form>
+					</div>
+					<!-- //Popup form -->
 				</div>
 				<!-- //Article row -->
 				
