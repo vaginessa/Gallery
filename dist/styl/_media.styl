@@ -42,8 +42,12 @@
 	.gallery__item
 		&.first
 			min-height 368px
+			
+				
 		&.second
 			min-height 156px
+			img
+				min-height 157px
 		&.third
 			min-height 206px
 		&.fourth
@@ -66,7 +70,7 @@
 			
 	// Contacts
 	.form__descr
-		left -47%
+		left -52%
 	.form__wrapper
 		background none
 		
@@ -92,6 +96,7 @@
 				font-size 12px
 		&.first
 			min-height 282px
+			
 			.gallery__item--title
 				font-size 18px
 			.gallery__item--descr
@@ -99,6 +104,8 @@
 					left auto
 		&.second
 			min-height 120px
+			img
+				min-height 121px
 			.gallery__item--title
 				font-size 18px
 			.gallery__item--descr
@@ -143,7 +150,10 @@
 		&:before
 			display none
 		&:after
-			display none
+			display block
+			left 20%
+			bottom auto
+			top 125px
 	
 		.logo__wrapper
 			margin-bottom 40px
@@ -298,6 +308,8 @@
 					bottom auto
 					font-size 14px
 					position relative
+			img
+				min-height 200px
 	
 		
 					
@@ -358,3 +370,5 @@
 			left 10%
 		.logo__wrapper
 			margin-bottom 25px
+
+

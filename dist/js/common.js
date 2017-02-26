@@ -79,13 +79,14 @@ $(document).ready(function() {
   	items:1,
   	dots: true,
   	nav: true,
-  	navText: ['', '']    
+  	navText: ['', ''],
+  	autoplay:true  
 	})
 
 
 
 	// Ajax form
-	$("#contactForm").submit(function(e) {
+	$(".contact__form").submit(function(e) {
 		e.preventDefault();
 	 //Change
 		var th = $(this);
